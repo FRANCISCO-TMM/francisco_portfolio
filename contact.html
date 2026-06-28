@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Alex Okonkwo</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <a class="nav-logo" href="index.html">Alex <span>Okonkwo</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="planner.html">Planner</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <main>
+    <section class="section" style="padding-bottom:2rem">
+      <div class="container">
+        <p class="section-label">Let's Connect</p>
+        <h1 class="section-title">Get In Touch</h1>
+        <p class="section-subtitle">
+          Whether you have a project idea, a question, or just want to say hello — 
+          my inbox is always open.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- LEFT: Info -->
+          <div class="contact-info">
+            <h2>Contact Details</h2>
+            <p>Feel free to reach out through any of the channels below, or use the form to send me a message directly.</p>
+
+            <div class="contact-item">
+              <div class="contact-icon">📧</div>
+              <div>
+                <div class="contact-item-label">Email</div>
+                <div class="contact-item-val">alex.okonkwo@student.miva.university</div>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">📞</div>
+              <div>
+                <div class="contact-item-label">Phone</div>
+                <div class="contact-item-val">+234 800 000 0000</div>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">📍</div>
+              <div>
+                <div class="contact-item-label">Location</div>
+                <div class="contact-item-val">Abuja, Federal Capital Territory, Nigeria</div>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">🐙</div>
+              <div>
+                <div class="contact-item-label">GitHub</div>
+                <div class="contact-item-val">
+                  <a href="https://github.com" target="_blank" rel="noopener">github.com/alexokonkwo</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">💼</div>
+              <div>
+                <div class="contact-item-label">LinkedIn</div>
+                <div class="contact-item-val">
+                  <a href="https://linkedin.com" target="_blank" rel="noopener">linkedin.com/in/alexokonkwo</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Availability Banner -->
+            <div style="margin-top:1.5rem;background:rgba(63,185,80,0.08);border:1px solid rgba(63,185,80,0.25);border-radius:var(--radius);padding:1rem 1.25rem;display:flex;align-items:center;gap:0.75rem">
+              <span style="font-size:1.2rem">✅</span>
+              <div>
+                <strong style="font-size:0.85rem;color:var(--accent2)">Open to Opportunities</strong>
+                <p style="font-size:0.78rem;color:var(--muted);margin-top:0.2rem">
+                  Currently seeking internships and freelance web projects.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT: Form -->
+          <div class="contact-form">
+            <h2 style="font-family:var(--ff-display);font-size:1.4rem;margin-bottom:0.25rem">Send a Message</h2>
+            <p style="font-size:0.85rem;color:var(--muted);margin-bottom:1.75rem">
+              All fields are required. I typically respond within 24 hours.
+            </p>
+
+            <form id="contactForm" novalidate>
+              <!-- Name & Email row -->
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contactName">Full Name</label>
+                  <input
+                    type="text"
+                    id="contactName"
+                    placeholder="Jane Smith"
+                    maxlength="80"
+                    autocomplete="name"
+                  />
+                  <span class="field-error" id="contactNameError"></span>
+                </div>
+                <div class="form-group">
+                  <label for="contactEmail">Email Address</label>
+                  <input
+                    type="email"
+                    id="contactEmail"
+                    placeholder="jane@example.com"
+                    maxlength="120"
+                    autocomplete="email"
+                  />
+                  <span class="field-error" id="contactEmailError"></span>
+                </div>
+              </div>
+
+              <!-- Phone -->
+              <div class="form-group">
+                <label for="contactPhone">Phone Number</label>
+                <input
+                  type="tel"
+                  id="contactPhone"
+                  placeholder="08012345678"
+                  maxlength="20"
+                  autocomplete="tel"
+                />
+                <span class="field-error" id="contactPhoneError"></span>
+              </div>
+
+              <!-- Message -->
+              <div class="form-group">
+                <label for="contactMessage">Message</label>
+                <textarea
+                  id="contactMessage"
+                  placeholder="Hi Alex, I'd like to discuss a web project idea…"
+                  maxlength="1000"
+                ></textarea>
+                <span class="field-error" id="contactMessageError"></span>
+              </div>
+
+              <!-- Privacy note -->
+              <p style="font-size:0.75rem;color:var(--muted);margin-bottom:1.25rem;line-height:1.6">
+                🔒 Your information is only used to respond to your enquiry and will never be shared with third parties.
+              </p>
+
+              <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;padding:0.85rem">
+                Send Message →
+              </button>
+
+              <div class="form-success" id="formSuccess">
+                ✅ Your message has been sent! I'll get back to you within 24 hours.
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- FAQ -->
+        <div style="margin-top:4rem">
+          <p class="section-label">Common Questions</p>
+          <h2 class="section-title">FAQ</h2>
+          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem">
+            <div class="card">
+              <h3 style="font-size:0.95rem;font-weight:700;margin-bottom:0.5rem">Are you available for freelance work?</h3>
+              <p style="font-size:0.85rem;color:var(--muted)">Yes! I take on small-to-medium web projects during semester breaks and weekends.</p>
+            </div>
+            <div class="card">
+              <h3 style="font-size:0.95rem;font-weight:700;margin-bottom:0.5rem">What types of projects do you enjoy?</h3>
+              <p style="font-size:0.85rem;color:var(--muted)">Front-end web apps, student tools, portfolio sites, and anything that solves a real problem for real people.</p>
+            </div>
+            <div class="card">
+              <h3 style="font-size:0.95rem;font-weight:700;margin-bottom:0.5rem">Can you work remotely?</h3>
+              <p style="font-size:0.85rem;color:var(--muted)">Absolutely. I'm a fully remote student and am comfortable collaborating via email, Slack, or Google Meet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="planner.html">Planner</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <p>© <span class="year"></span> Alex Okonkwo · COS 106 Term Project · MIVA Open University</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

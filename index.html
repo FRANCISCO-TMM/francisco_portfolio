@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alex Okonkwo — Student Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <a class="nav-logo" href="index.html">Alex <span>Okonkwo</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="planner.html">Planner</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero section">
+      <div class="container">
+        <div class="hero-inner">
+          <!-- LEFT: Text -->
+          <div>
+            <p class="hero-eyebrow">Computer Science Student</p>
+            <h1>
+              Building the<br>
+              web of <em>tomorrow</em>,<br>
+              one line at a time.
+            </h1>
+            <p class="hero-bio">
+              Hi, I'm <strong>Alex Okonkwo</strong> — a passionate 200-level Computer Science 
+              student at MIVA Open University. I love crafting clean, performant web 
+              experiences and exploring the intersection of technology and human creativity.
+            </p>
+            <div class="hero-actions">
+              <a href="projects.html" class="btn btn-primary">View My Projects</a>
+              <a href="contact.html" class="btn btn-outline">Get In Touch</a>
+            </div>
+
+            <div class="hero-stats">
+              <div class="stat">
+                <span class="stat-num">3+</span>
+                <span class="stat-label">Projects Built</span>
+              </div>
+              <div class="stat">
+                <span class="stat-num">200L</span>
+                <span class="stat-label">Current Level</span>
+              </div>
+              <div class="stat">
+                <span class="stat-num">4.5</span>
+                <span class="stat-label">GPA</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT: Photo -->
+          <div class="hero-photo-wrap fade-in fade-in-delay-2">
+            <div class="avatar-placeholder" role="img" aria-label="Alex Okonkwo profile photo">
+              <img src="profile.jpeg" alt="">
+            </div>
+            <div class="hero-photo-badge">
+              <div>
+                <div class="stat-num" style="color:var(--accent2)">✓</div>
+              </div>
+              <div>
+                <div class="stat-label">Available for</div>
+                <div style="font-size:0.85rem;font-weight:600">Internships</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-hint">Scroll</div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <p class="section-label">What I Know</p>
+        <h2 class="section-title">Core Skills</h2>
+        <p class="section-subtitle">Technologies and tools I work with to bring ideas to life.</p>
+
+        <div class="skills-grid">
+          <div class="skill-chip">
+            <div class="skill-icon">🌐</div>
+            <div class="skill-name">HTML5</div>
+            <div class="skill-level">Advanced</div>
+          </div>
+          <div class="skill-chip">
+            <div class="skill-icon">🎨</div>
+            <div class="skill-name">CSS3</div>
+            <div class="skill-level">Advanced</div>
+          </div>
+          <div class="skill-chip">
+            <div class="skill-icon">⚡</div>
+            <div class="skill-name">JavaScript</div>
+            <div class="skill-level">Intermediate</div>
+          </div>
+          <div class="skill-chip">
+            <div class="skill-icon">🐍</div>
+            <div class="skill-name">Python</div>
+            <div class="skill-level">Intermediate</div>
+          </div>
+          <div class="skill-chip">
+            <div class="skill-icon">🐙</div>
+            <div class="skill-name">Git & GitHub</div>
+            <div class="skill-level">Intermediate</div>
+          </div>
+          <div class="skill-chip">
+            <div class="skill-icon">🗄️</div>
+            <div class="skill-name">SQL</div>
+            <div class="skill-level">Beginner</div>
+          </div>
+          <div class="skill-chip">
+            <div class="skill-icon">📱</div>
+            <div class="skill-name">Responsive Design</div>
+            <div class="skill-level">Advanced</div>
+          </div>
+          <div class="skill-chip">
+            <div class="skill-icon">🔧</div>
+            <div class="skill-name">VS Code</div>
+            <div class="skill-level">Advanced</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MEDIA SECTION -->
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <p class="section-label">Introduction</p>
+        <h2 class="section-title">Hear From Me</h2>
+        <p class="section-subtitle">A short audio introduction about my journey and goals.</p>
+        <div class="media-section">
+          <p style="color:var(--muted);font-size:0.9rem;margin-bottom:0.5rem">🎙 Audio Introduction — <em>Alex Okonkwo</em></p>
+          <audio controls>
+            <source src="#" type="audio/mpeg" />
+            <p style="color:var(--muted);font-size:0.85rem">
+              Your browser supports audio. 
+              <em>(Replace the src above with your actual audio file path, e.g. <code>media/intro.mp3</code>)</em>
+            </p>
+          </audio>
+          <p style="color:var(--muted);font-size:0.8rem;margin-top:0.75rem">
+            💡 <em>To add your audio: record an MP3, place it in a <code>media/</code> folder, and update the <code>src</code> attribute above.</em>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="planner.html">Planner</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <p>© <span class="year"></span> Alex Okonkwo · COS 106 Term Project · MIVA Open University</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

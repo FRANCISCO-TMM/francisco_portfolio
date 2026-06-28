@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Academic Planner — Alex Okonkwo</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <a class="nav-logo" href="index.html">Alex <span>Okonkwo</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="planner.html">Planner</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <main>
+    <section class="section" style="padding-bottom:2rem">
+      <div class="container">
+        <p class="section-label">Stay Organised</p>
+        <h1 class="section-title">Academic Planner</h1>
+        <p class="section-subtitle">
+          Track your assignments, deadlines, and study sessions. 
+          Tasks are saved locally so they persist across sessions.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="planner-wrap">
+
+          <!-- SUMMARY CARDS -->
+          <div class="planner-summary">
+            <div class="summary-card">
+              <div class="summary-num" id="totalCount" style="color:var(--accent)">0</div>
+              <div class="summary-label">Total Tasks</div>
+            </div>
+            <div class="summary-card">
+              <div class="summary-num" id="pendingCount" style="color:var(--gold)">0</div>
+              <div class="summary-label">Pending</div>
+            </div>
+            <div class="summary-card">
+              <div class="summary-num" id="doneCount" style="color:var(--accent2)">0</div>
+              <div class="summary-label">Completed</div>
+            </div>
+          </div>
+
+          <!-- ADD TASK FORM -->
+          <form id="taskForm" class="planner-input-row" novalidate>
+            <input
+              type="text"
+              id="taskInput"
+              placeholder="Add a new task, e.g. 'Submit COS 106 assignment'"
+              maxlength="120"
+              autocomplete="off"
+              required
+            />
+            <select id="taskPriority">
+              <option value="high">🔴 High</option>
+              <option value="medium" selected>🟡 Medium</option>
+              <option value="low">🟢 Low</option>
+            </select>
+            <button type="submit" class="btn btn-primary">Add Task</button>
+          </form>
+
+          <!-- FILTER BUTTONS -->
+          <div class="planner-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="pending">Pending</button>
+            <button class="filter-btn" data-filter="completed">Completed</button>
+          </div>
+
+          <!-- TASK LIST -->
+          <div id="taskList" class="task-list">
+            <div class="empty-state">
+              <div class="empty-icon">📋</div>
+              <p>No tasks yet.<br>Add your first task above!</p>
+            </div>
+          </div>
+
+          <!-- INSTRUCTIONS -->
+          <div class="card" style="margin-top:2rem;padding:1.25rem 1.5rem">
+            <h3 style="font-size:0.9rem;font-weight:700;margin-bottom:0.75rem;display:flex;align-items:center;gap:0.5rem">
+              💡 How to use the Planner
+            </h3>
+            <ul style="font-size:0.85rem;color:var(--muted);padding-left:1.25rem;list-style:disc;display:flex;flex-direction:column;gap:0.4rem">
+              <li>Type a task in the input box, choose a priority level, and click <strong>Add Task</strong>.</li>
+              <li>Click the <strong>circle button</strong> on the left to mark a task as done.</li>
+              <li>Click the <strong>✕ button</strong> on the right to remove a task permanently.</li>
+              <li>Use the <strong>filter buttons</strong> to view All, Pending, or Completed tasks.</li>
+              <li>Your tasks are <strong>saved automatically</strong> — they'll be here when you return!</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="planner.html">Planner</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <p>© <span class="year"></span> Alex Okonkwo · COS 106 Term Project · MIVA Open University</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
