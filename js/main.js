@@ -63,7 +63,23 @@
   if (!document.getElementById('taskForm')) return;
 
   // State
-  let tasks  = JSON.parse(localStorage.getItem('portfolio_tasks') || '[]');
+  let tasks = JSON.parse(localStorage.getItem('portfolio_tasks')) || [
+    {
+        id: "1",
+        text: "Set up Wireshark lab environment",
+        priority: "high",
+        done: false,
+        created: new Date().toISOString()
+    },
+    {
+        id: "2",
+        text: "Review SIEM log monitoring notes",
+        priority: "medium",
+        done: false,
+        created: new Date().toISOString()
+    }
+];
+
   let filter = 'all';
 
   const form        = document.getElementById('taskForm');
