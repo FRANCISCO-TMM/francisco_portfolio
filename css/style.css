@@ -386,7 +386,7 @@ main { padding-top: 64px; }
 /* Scroll indicator */
 .scroll-hint {
   position: absolute;
-  bottom: 0.2rem;
+  bottom: -2rem;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
